@@ -4,7 +4,7 @@
 **LeetCode 3110**
 **Accuracy**: 91.9%
 **Tags**: Strings
-**Time**: 47 Minutes
+**Time**: 57 Minutes
 
 ---
 
