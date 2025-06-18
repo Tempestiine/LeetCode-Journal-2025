@@ -1,0 +1,54 @@
+# 🧮 Problem: Score of a String
+
+**LeetCode 3110**
+**Accuracy**: 91.9%
+**Tags**: Strings
+
+---
+
+### 🔗 Problem Description
+
+You are given a string `s`. The score of the string is defined as the sum of the absolute differences between the ASCII values of each pair of adjacent characters.
+
+**Example 1:**  
+Input: `"hello"`  
+Output: `13`  
+Explanation: `|104 - 101| + |101 - 108| + |108 - 108| + |108 - 111| = 3 + 7 + 0 + 3`
+
+**Example 2:**  
+Input: `"zaz"`  
+Output: `50`
+
+---
+
+### 🧠 My Thought Process
+
+I have to traverse the string and calculate the differences between each pair of adjacent characters. Characters can be treated as integers using their ASCII values. If two characters are the same, their difference will be zero, so I don't have to compare those two characters. I'll add each difference to a total and return the sum.
+
+---
+
+### 🧪 Code (Java)
+
+```java
+class Solution {
+    public int scoreOfString(String s) {
+        // 2:47PM
+        int sum = 0;
+        for (int x = 0; x < s.length() - 1; x++) {
+            int a = s.charAt(x), b = s.charAt(x + 1);
+            if (a == b)
+                continue;
+            sum += Math.abs(a - b);
+        }
+        return sum;
+    }
+}
+```
+
+--- 
+
+### 🧠 Reflection
+- Characters can be used like integers in Java.
+- It's not necessary to declare "int a" and "int b." Those two variables used up more memory.
+
+
