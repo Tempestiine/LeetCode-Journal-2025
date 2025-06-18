@@ -9,6 +9,7 @@ This repo is just to help me be consistent and thoughtful with my growth. Some d
 ## Structure
 
 Each folder = most popular topic (Arrays, String, Math, Sorting).
+
 Each file = one problem, with % Acceptances AND notes AND reflection AND code
 
 ---
